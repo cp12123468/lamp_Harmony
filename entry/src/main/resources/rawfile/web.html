@@ -1,0 +1,37 @@
+<!-- 二、设置宽和高-->
+<head>
+  <style>
+    #container{
+      width: 2000px;
+      height: 2000px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 一、新建一个容器 -->
+  <div id="container" ></div>
+</body>
+
+<!--三、引入高德地图的js-->
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.8&key=126fb394938b448265522e8bd47247a7"></script>
+
+<!--四、异步初始化高德地图插件-->
+<script>
+//初始化地图插件
+window.onload = function(){
+    var map = new AMap.Map("container", {
+          zoom: 15, //设置地图显示的缩放级别
+          center: [117.040684,39.429254] //设置地图中心点坐标
+       });
+
+       // 创建一个 Marker 实例：（标记点）
+      var marker = new AMap.Marker({
+         position: new AMap.LngLat(116.44927, 39.9584), // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+         title: "位置标题"
+      });
+
+     // 将创建的点标记添加到已有的地图实例：
+     map.add(marker);
+}
+</script>

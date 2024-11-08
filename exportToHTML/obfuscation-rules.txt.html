@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>obfuscation-rules.txt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+obfuscation-rules.txt</font>
+</center></td></tr></table>
+<pre><span class="s0"># Define project specific obfuscation rules here.</span>
+<span class="s0"># You can include the obfuscation configuration files in the current module's build-profile.json5.</span>
+<span class="s0">#</span>
+<span class="s0"># For more details, see</span>
+<span class="s0">#   https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/source-obfuscation-V5</span>
+
+<span class="s0"># Obfuscation options:</span>
+<span class="s0"># -disable-obfuscation: disable all obfuscations</span>
+<span class="s0"># -enable-property-obfuscation: obfuscate the property names</span>
+<span class="s0"># -enable-toplevel-obfuscation: obfuscate the names in the global scope</span>
+<span class="s0"># -compact: remove unnecessary blank spaces and all line feeds</span>
+<span class="s0"># -remove-log: remove all console.* statements</span>
+<span class="s0"># -print-namecache: print the name cache that contains the mapping from the old names to new names</span>
+<span class="s0"># -apply-namecache: reuse the given cache file</span>
+
+<span class="s0"># Keep options:</span>
+<span class="s0"># -keep-property-name: specifies property names that you want to keep</span>
+<span class="s0"># -keep-global-name: specifies names that you want to keep in the global scope</span>
+
+<span class="s0">-enable-property-obfuscation</span>
+<span class="s0">-enable-toplevel-obfuscation</span>
+<span class="s0">-enable-filename-obfuscation</span>
+<span class="s0">-enable-export-obfuscation</span></pre>
+</body>
+</html>
